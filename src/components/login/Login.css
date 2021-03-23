@@ -1,0 +1,27 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.login > img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.login > a {
+    padding: 14.6px;
+    border-radius: 99px;
+    background-color: #1db954;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login > a:hover {
+    background-color: #1ed760;
+}
+

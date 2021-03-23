@@ -1,0 +1,42 @@
+.sidebar {
+    height: 100vh;
+    flex: 0.2;
+    background-color: #000000;
+    min-width: 230px;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.sidebar_wrapper {
+    position: fixed;
+    width: 20%;
+    min-width: 230px;
+}
+
+.sidebar_wrapper > hr {
+    background-color: #282828;
+    border: none;
+    height: 1px;
+    width: 92%;
+    margin: 10px auto;
+}
+
+.sidebar_logo {
+    height: 38.7px;
+    object-fit: contain;
+    margin-right: auto;
+    padding: 15px;
+    padding-top: 25px;
+}
+
+.sidebar_title {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: #b3b3b3;
+    line-height: 16px;
+    min-height: 16px;
+    letter-spacing: .05em;
+}

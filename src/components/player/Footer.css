@@ -1,0 +1,110 @@
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    padding: 20px 0;
+}
+
+.footer_left {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    max-width: 300px;
+    padding-left: 16px;
+}
+
+.footer_albumLogo {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.footer_songInfo > h4 {
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.footer_songInfo > p {
+    font-size: 10px;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.footer_green {
+    color:#1db954;
+}
+
+.footer_green:hover {
+    color:#1b9445;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer_center {
+    flex: 0.4;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+    flex: 0.3;
+    padding-right: 16px;
+}
+
+.footer_right > p, .footer_left > p, .footer_center {
+    color: #b3b3b3;
+}
+
+.footer_icon:hover {
+    color: #fff;
+}
+
+.playPauseIcon {
+    font-size: 40px !important;
+    color: #fff;
+}
+
+.playPauseIcon:hover {
+    transform: scale(1.06);
+    transition: transform 0.2s ease-in-out;
+}
+
+.playPauseIcon:active {
+    transform: scale(.99);
+    transition: transform 0.2s ease-in-out;
+}
+
+.MuiSlider-root {
+    color: #535353 !important;
+    height: 5px!important;
+}
+
+.MuiSlider-track, .MuiSlider-thumb {
+    color: #1db954;
+}
+
+.MuiSlider-rail, .MuiSlider-track {
+    height: 4px !important;
+    margin-top: -3px;
+    border-radius: 45px!important;
+}
+
+.MuiSlider-thumb {
+    margin-top: -7px !important;
+}
+

@@ -1,0 +1,39 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 13.8px;
+    line-height: 16px;
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    margin-left: 15px;
+}
+
+.sidebarOption:hover {
+    color: #fff;
+}
+
+.sidebarOption > h4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sidebarOption_icon {
+    padding-right: 15px;
+}
+
+.sidebarOption:first-of-type {
+    margin-top: 2px;
+}
+
+.playlistItems {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -7px;
+}
+
+.playlistItems .sidebarOption {
+    height: 32px;
+}
