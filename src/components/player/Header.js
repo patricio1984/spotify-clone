@@ -3,10 +3,14 @@ import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import { Avatar } from "@material-ui/core";
 import { useDataLayerValue } from '../../context/DataLayer';
+import { loginUrl } from '../../config/spotify';
 
 const Header = () => {
 
     const [{ user}, dispatch ] = useDataLayerValue();
+
+    console.log(user)
+    ;
     return (
         <header className="header">
             <div className="header_left">
@@ -16,10 +20,10 @@ const Header = () => {
                     type="text"
                 />
             </div>
-            <div className="header_right">
+            <a href={loginUrl} className="header_right">
                 <Avatar src={user?.images[0]?.url} alt={`Avatar de ${user?.display_name}`} />
                 <h4>{user?.display_name}</h4>
-            </div>
+            </a>
         </header>
     )
 }
