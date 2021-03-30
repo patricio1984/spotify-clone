@@ -40,3 +40,9 @@
     min-height: 16px;
     letter-spacing: .05em;
 }
+
+@media (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+}

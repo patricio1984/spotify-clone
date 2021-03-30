@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./SongRow.css";
 import { useDataLayerValue } from "../../context/DataLayer";
 import { useSoundLayerValue } from "../../context/SoundLayer";
@@ -7,6 +7,9 @@ const SongRow = ({track}) => {
 
     const [{}, dispatch] = useDataLayerValue();
     const [{playing, repeat}, soundDispatch] = useSoundLayerValue();
+    const [ error, setError ] = useState(false);
+
+   
 
     const changeTrack = (e, track) => {
         dispatch({
@@ -40,7 +43,7 @@ const SongRow = ({track}) => {
         <div className="songRow" onClick={(e) => changeTrack(e, track)}>
             <img className="songRow_album" src={track.album.images[0].url} alt=""/>
             <div className="songRow_info">
-                <h1>{track.name}</h1>
+                <h1>{track.name} {!track.preview_url ? <span> Preview no disponible</span> : ""}</h1>
                 <p>
                     {track.artists.map((artist) => artist.name).join(", ")} 
                 </p>

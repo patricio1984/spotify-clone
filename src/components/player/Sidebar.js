@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
@@ -9,8 +9,8 @@ import { useDataLayerValue } from "../../context/DataLayer";
 
 const Sidebar = ({spotify}) => {
 
-    const [ { playlists }] = useDataLayerValue();
-
+    const [ { playlists}] = useDataLayerValue();
+  
     return (
         <aside className="sidebar">
             <div className="sidebar_wrapper">

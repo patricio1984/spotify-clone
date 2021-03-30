@@ -76,4 +76,41 @@
 
 .body_infoText > strong {
     font-size: 12px;
+}   
+
+@media (max-width: 700px) {
+    .body {
+        flex: 1;
+    }
+
+    .body_info {
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body_infoText > h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .body_infoText > p {
+        font-size: 14px;
+        color: #ffffffb3;
+    }
+
+    .body_info > img {
+        height: 50vw;
+    }
+}
+
+@media (max-width: 280px) {
+    .body_info {
+        margin-top: 180px;
+    }
+
+    .playlist_items {
+        margin-top: 70px;
+    }
+
 }

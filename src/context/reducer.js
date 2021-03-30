@@ -45,6 +45,13 @@ const reducer = (state, action) => {
                 current_playlist: currentPlaylist
             }
         }
+        case 'RESET_CURRENT_PLAYLIST': {
+            let currentPlaylist = null;
+            return {
+                ...state,
+                current_playlist: currentPlaylist
+            }
+        }
         case 'SET_TRACKS': {
             return {
                 ...state,

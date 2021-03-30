@@ -9,10 +9,9 @@ const Header = () => {
 
     const [{ user}, dispatch ] = useDataLayerValue();
 
-    console.log(user)
-    ;
     return (
         <header className="header">
+            <img className="header_logo" src="https://logodownload.org/wp-content/uploads/2016/09/spotify-logo-branca-white.png" alt="Spotify logo"/>
             <div className="header_left">
                 <SearchIcon />
                 <input 
